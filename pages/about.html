@@ -13,39 +13,93 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Rice Farming</title>
     <link rel="icon" href="../images/logo.png">
   </head>
   <body class="bg-lime-200 pt-36">
-    <section class="fixed w-full top-0 z-50">
-      <div class="bg-lime-900 flex flex-col md:flex-row md:justify-between items-center p-4">
+    <header class="fixed w-full top-0 z-50 bg-lime-900 p-4">
+      <div class="flex justify-between items-center">
         <div>
-          <img class="w-20 ml-0 md:ml-12" src="../images/logo.png" alt="">
+          <img class="w-20 ml-0 md:ml-12" src="../images/logo.png" alt="Logo">
         </div>
-        <div class="mt-4 md:mt-0 text-center font-bold text-white">
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-white">
+            <i class="fa fa-bars fa-2x"></i>
+          </button>
+        </div>
+        <nav id="menu" class="hidden md:flex flex-col md:flex-row md:items-center text-center font-bold text-white">
           <a class="hover:text-green-500 px-2 md:px-8" href="../index.html">Home</a>
           <a class="hover:text-green-500 px-2 md:px-8" href="contact.html">Contact</a>
           <a class="hover:text-green-500 px-2 md:px-8" href="services.html">Services</a>
           <a class="hover:text-green-500 px-2 md:px-8" href="about.html">About</a>
+        </nav>
+      </div>
+    </header>
+    <div class="pt-24 p-4 md:p-12">
+      <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <div class="bg-cover bg-center h-64 bg-[url('https://eos.com/wp-content/uploads/2023/04/rice-field.jpg.webp')]"></div>
+        <div class="p-6 md:p-12">
+          <h1 class="text-4xl font-bold mb-4 text-lime-900">About Us</h1>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <img class="w-full rounded-lg" src="../images/logo.png" alt="Logo">
+            <p class="text-justify leading-relaxed text-lg">
+              Welcome to Rice Farming! <br><br>
+              At Rice Farming, we are passionate about cultivating the highest quality rice while promoting sustainable agricultural practices. Nestled in the heart of Pampanga, our family-owned farm has been dedicated to producing premium rice for generations. <br><br>
+              Our journey began with a simple vision: to grow rice that is not only delicious but also nourishing for the community and the environment. Over the years, we have embraced innovative farming techniques and combined them with time-honored traditions to ensure that every grain of rice meets our exacting standards of quality and taste. <br><br>
+              We believe in the importance of sustainability. That’s why we use eco-friendly farming methods, prioritize water conservation, and support biodiversity in our fields. Our commitment to the environment is matched only by our dedication to our community. We work closely with local farmers, providing them with the resources and knowledge needed to thrive alongside us. <br><br>
+              At Rice Farming, we take pride in every step of the rice-growing process, from planting to harvesting to packaging. Our team is dedicated to maintaining the highest standards of safety and quality, ensuring that you and your family can enjoy our rice with confidence. <br><br>
+              Thank you for supporting Rice Farming. We are honored to be a part of your kitchen and your life, providing you with rice that is wholesome, delicious, and grown with care. <br><br>
+              Join us on our journey to make a positive impact on the world, one grain of rice at a time. <br><br>
+              Rice Farming - Growing Excellence, Harvesting Quality.
+            </p>
+          </div>
         </div>
       </div>
-    </section>
-    <section>
-      <h1 class="pl-4 md:pl-12 pt-6 font-bold text-3xl">About Us</h1>
-      <img src="/images/logo.png" alt="">
-    </section>
-    <footer class="bg-lime-900 p-4 md:p-12 text-center font-bold text-lg md:text-2xl text-white">
-      <h3>Rice Farming&copy; - 2024</h3>
-      <div class="mt-2">
-        <a class="px-2" href=""><i class="fa-brands fa-facebook"></i></a>
-        <a class="px-2" href=""><i class="fa-brands fa-x-twitter"></i></a>
-        <a class="px-2" href=""><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <!-- Footer Section -->
+    <footer class="bg-lime-900 p-8 text-white">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- About Section -->
+        <div>
+          <img class="w-20 mb-4" src="../images/logo.png" alt="Logo">
+          <p class="text-lg">
+            Rice Farming is dedicated to producing premium rice while promoting sustainable agricultural practices. Thank you for supporting us.
+          </p>
+        </div>
+    
+        <!-- Navigation Links -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Links</h3>
+          <ul>
+            <li class="mb-2"><a class="hover:text-green-500" href="../index.html">Home</a></li>
+            <li class="mb-2"><a class="hover:text-green-500" href="contact.html">Contact</a></li>
+            <li class="mb-2"><a class="hover:text-green-500" href="services.html">Services</a></li>
+            <li class="mb-2"><a class="hover:text-green-500" href="about.html">About</a></li>
+          </ul>
+        </div>
+    
+        <!-- Newsletter Subscription -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Subscribe to Our Newsletter</h3>
+          <form class="flex flex-col">
+            <input class="p-2 mb-4 text-black rounded" type="email" placeholder="Enter your email">
+            <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    
+      <!-- Social Media Links -->
+      <div class="mt-8 text-center">
+        <a class="px-2 text-2xl" href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a class="px-2 text-2xl" href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a class="px-2 text-2xl" href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    
+      <!-- Footer Bottom -->
+      <div class="mt-8 text-center">
+        <h3 class="font-bold text-lg">&copy; 2024 Rice Farming</h3>
       </div>
     </footer>
   </body>

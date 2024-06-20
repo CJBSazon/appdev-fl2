@@ -22,11 +22,11 @@
     <title>Rice Farming</title>
     <link rel="icon" href="../images/logo.png">
   </head>
-  <body class="bg-lime-200 pt-36">
+  <body class="bg-lime-200">
     <section class="fixed w-full top-0 z-50">
       <div class="bg-lime-900 flex flex-col md:flex-row md:justify-between items-center p-4">
         <div>
-          <img class="w-20 ml-0 md:ml-12" src="../images/logo.png" alt="">
+          <img class="w-20 ml-0 md:ml-12" src="../images/logo.png" alt="Logo">
         </div>
         <div class="mt-4 md:mt-0 text-center font-bold text-white">
           <a class="hover:text-green-500 px-2 md:px-8" href="../index.html">Home</a>
@@ -36,16 +36,83 @@
         </div>
       </div>
     </section>
-    <section>
-      <h1 class="pl-4 md:pl-12 pt-6 font-bold text-3xl">Services</h1>
-      <img src="/images/logo.png" alt="">
+    <section class="pt-36 px-4 md:px-12 mb-12">
+      <h1 class="text-3xl font-bold mb-8">Our Services</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img class="h-40 w-full object-cover mb-4 rounded" src="../images/service1.webp" alt="Service 1">
+          <h2 class="text-xl font-semibold mb-2">Rice Cultivation</h2>
+          <p>Experience the best rice cultivation techniques that ensure high yield and quality. Our methods are eco-friendly and sustainable.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img class="h-40 w-full object-cover mb-4 rounded" src="../images/service2.png" alt="Service 2">
+          <h2 class="text-xl font-semibold mb-2">Water Management</h2>
+          <p>We offer advanced water management solutions to conserve water while maintaining optimal growth conditions for rice plants.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img class="h-40 w-full object-cover mb-4 rounded" src="../images/service3.jpg" alt="Service 3">
+          <h2 class="text-xl font-semibold mb-2">Soil Testing</h2>
+          <p>Our soil testing services help you understand the nutrient composition and pH levels of your soil for better crop planning.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img class="h-40 w-full object-cover mb-4 rounded" src="../images/service4.jpeg" alt="Service 4">
+          <h2 class="text-xl font-semibold mb-2">Pest Control</h2>
+          <p>Effective and environmentally-friendly pest control solutions to protect your rice crops from various pests and diseases.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img class="h-40 w-full object-cover mb-4 rounded" src="../images/service5.webp" alt="Service 5">
+          <h2 class="text-xl font-semibold mb-2">Harvesting</h2>
+          <p>Professional harvesting services that ensure minimal wastage and maximum yield, using modern equipment and techniques.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img class="h-40 w-full object-cover mb-4 rounded" src="../images/service6.jpg" alt="Service 6">
+          <h2 class="text-xl font-semibold mb-2">Consultation</h2>
+          <p>Expert consultation services to help you plan and execute your rice farming operations efficiently and profitably.</p>
+        </div>
+      </div>
     </section>
-    <footer class="bg-lime-900 p-4 md:p-12 text-center font-bold text-lg md:text-2xl text-white">
-      <h3>Rice Farming&copy; - 2024</h3>
-      <div class="mt-2">
-        <a class="px-2" href=""><i class="fa-brands fa-facebook"></i></a>
-        <a class="px-2" href=""><i class="fa-brands fa-x-twitter"></i></a>
-        <a class="px-2" href=""><i class="fa-brands fa-instagram"></i></a>
+    <!-- Footer Section -->
+    <footer class="bg-lime-900 p-8 text-white">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- About Section -->
+        <div>
+          <img class="w-20 mb-4" src="../images/logo.png" alt="Logo">
+          <p class="text-lg">
+            Rice Farming is dedicated to producing premium rice while promoting sustainable agricultural practices. Thank you for supporting us.
+          </p>
+        </div>
+    
+        <!-- Navigation Links -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Links</h3>
+          <ul>
+            <li class="mb-2"><a class="hover:text-green-500" href="../index.html">Home</a></li>
+            <li class="mb-2"><a class="hover:text-green-500" href="contact.html">Contact</a></li>
+            <li class="mb-2"><a class="hover:text-green-500" href="services.html">Services</a></li>
+            <li class="mb-2"><a class="hover:text-green-500" href="about.html">About</a></li>
+          </ul>
+        </div>
+    
+        <!-- Newsletter Subscription -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Subscribe to Our Newsletter</h3>
+          <form class="flex flex-col">
+            <input class="p-2 mb-4 text-black rounded" type="email" placeholder="Enter your email">
+            <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    
+      <!-- Social Media Links -->
+      <div class="mt-8 text-center">
+        <a class="px-2 text-2xl" href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a class="px-2 text-2xl" href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a class="px-2 text-2xl" href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    
+      <!-- Footer Bottom -->
+      <div class="mt-8 text-center">
+        <h3 class="font-bold text-lg">&copy; 2024 Rice Farming</h3>
       </div>
     </footer>
   </body>
