@@ -16,114 +16,145 @@
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-  <title>Rice Farming</title>
+    <title>Rice Farming</title>
     <link rel="icon" href="images/logo.png">
   </head>
-  <body class="bg-lime-200">
-      <header class="fixed w-full top-0 z-50 bg-lime-900">
-      <div class="flex flex-col md:flex-row md:justify-between items-center p-4">
-        <img class="w-20 ml-0 md:ml-12" src="images/logo.png" alt="Rice Farming Logo">
-        <nav id="menu" class="md:flex flex-col md:flex-row md:justify-center md:items-center text-center font-bold text-white mt-4 md:mt-0">
-          <a class="hover:text-green-500 px-2 md:px-8" href="index.html">Home</a>
-          <a class="hover:text-green-500 px-2 md:px-8" href="./pages/contact.html">Contact</a>
-          <a class="hover:text-green-500 px-2 md:px-8" href="./pages/services.html">Services</a>
-          <a class="hover:text-green-500 px-2 md:px-8" href="./pages/about.html">About</a>
+  <body class="bg-gray-100 text-gray-800">
+    <header class="fixed w-full top-0 z-50 bg-lime-900 shadow-lg">
+      <div class="container mx-auto flex justify-between items-center p-4">
+        <img class="w-20" src="images/logo.png" alt="Rice Farming Logo">
+        <nav class="hidden md:flex space-x-8 font-bold text-white">
+          <a class="hover:text-green-500" href="index.html">Home</a>
+          <a class="hover:text-green-500" href="pages/contact.html">Contact</a>
+          <a class="hover:text-green-500" href="pages/services.html">Services</a>
+          <a class="hover:text-green-500" href="pages/about.html">About</a>
         </nav>
+        <button class="md:hidden text-white" id="menu-button"><i class="fas fa-bars"></i></button>
       </div>
+      <nav id="mobile-menu" class="hidden md:hidden bg-lime-900 text-white font-bold text-center p-4">
+        <a class="block py-2 hover:text-green-500" href="index.html">Home</a>
+        <a class="block py-2 hover:text-green-500" href="pages/contact.html">Contact</a>
+        <a class="block py-2 hover:text-green-500" href="pages/services.html">Services</a>
+        <a class="block py-2 hover:text-green-500" href="pages/about.html">About</a>
+      </nav>
     </header>
 
-    <!-- Main Content -->
-    <div class="pt-24">
+    <main class="pt-24">
       <!-- Hero Section -->
-      <section class="text-center py-12">
-        <div class="bg-white shadow-md rounded-lg p-6 mx-4 md:mx-20">
-          <h1 class="text-3xl md:text-4xl font-bold">Rice Farming</h1>
-          <div class="flex justify-center mt-6">
-            <img class="w-4/5 md:w-2/5" src="images/rf-1.webp" alt="Rice Farming Image">
+      <section class="text-center bg-white py-12 shadow-lg rounded-lg mb-12 mt-12">
+        <h1 class="font-bold text-5xl text-lime-900 mb-6">Rice Farming</h1>
+        <img class="w-4/5 md:w-2/6 mx-auto mb-6 rounded-lg shadow-md" src="images/rf-1.webp" alt="Rice Farming">
+        <p class="m-4 md:m-12 text-lg leading-relaxed mb-6">
+          Rice farming is an ancient art and essential practice that sustains communities worldwide. From the flooded fields of Asia to the terraced hillsides of South America, rice cultivation involves intricate techniques, seasonal rhythms, and deep cultural significance. Learn about the meticulous process of planting, nurturing, and harvesting this vital staple crop, essential for feeding billions around the globe.
+        </p>
+        <a href="lm2.html">
+          <button class="inline-block bg-lime-900 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-500 transition duration-300">Learn More</button>
+        </a>
+      </section>
+      <!-- Content Section 1 -->
+      <section class="py-12 bg-white">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 md:pr-8 mb-8 md:mb-0">
+            <img class="rounded-lg shadow-lg" src="images/card1.jpg" alt="Planting Rice">
           </div>
-          <p class="m-4 md:m-12 font-mono text-lg">
-            Rice farming is an ancient art and essential practice that sustains communities worldwide. From the flooded fields of Asia to the terraced hillsides of South America, rice cultivation involves intricate techniques, seasonal rhythms, and deep cultural significance. Learn about the meticulous process of planting, nurturing, and harvesting this vital staple crop, essential for feeding billions around the globe.
-          </p>
-          <a href="lm2.html" class="inline-block mt-6 bg-lime-900 text-white font-bold py-3 px-6 rounded-lg hover:bg-lime-700">Learn More</a>
+          <div class="md:w-1/2 md:pl-8">
+            <h2 class="text-3xl font-bold text-lime-900 mb-6">How To Plant Rice</h2>
+            <p class="text-lg leading-relaxed mb-6">
+              To plant rice, sow pre-germinated seeds into prepared, waterlogged fields or transplant young seedlings from nurseries into flooded paddies, ensuring proper spacing for optimal growth.
+            </p>
+            <a href="lm3.html" class="inline-block bg-lime-900 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-500 transition duration-300">Learn More</a>
+          </div>
         </div>
       </section>
 
-      <!-- Content Sections -->
+      <!-- Content Section 2 -->
+      <section class="py-12 bg-gray-100">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 md:order-2 md:pl-8 mb-8 md:mb-0">
+            <img class="rounded-lg shadow-lg" src="images/card2.avif" alt="Ideal Soil">
+          </div>
+          <div class="md:w-1/2 md:order-1 md:pr-8">
+            <h2 class="text-3xl font-bold text-lime-900 mb-6">Ideal Soil For Growing Rice</h2>
+            <p class="text-lg leading-relaxed mb-6">
+              The ideal soil for growing rice is deep, fertile, and well-drained, with a high clay content to retain water, and a pH ranging from 5.5 to 7.0, often found in floodplains and river deltas.
+            </p>
+            <a href="lm1.html" class="inline-block bg-lime-900 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-500 transition duration-300">Learn More</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Content Section 3 -->
       <section class="py-12 bg-white">
-        <div class="max-w-4xl mx-auto text-center bg-white shadow-md rounded-lg p-6">
-          <h2 class="text-2xl font-bold font-mono mb-6">How To Plant Rice</h2>
-          <img class="w-full md:w-1/2 mx-auto mb-6" src="images/card1.jpg" alt="Planting Rice">
-          <p class="p-5 font-mono">
-            To plant rice, sow pre-germinated seeds into prepared, waterlogged fields or transplant young seedlings from nurseries into flooded paddies, ensuring proper spacing for optimal growth.
-          </p>
-          <a href="lm3.html" class="inline-block mt-6 bg-lime-900 text-white font-bold py-3 px-6 rounded-lg hover:bg-lime-700">Learn More</a>
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 md:pr-8 mb-8 md:mb-0">
+            <img class="rounded-lg shadow-lg" src="images/card3.jpg" alt="Ideal Climate">
+          </div>
+          <div class="md:w-1/2 md:pl-8">
+            <h2 class="text-3xl font-bold text-lime-900 mb-6">Ideal Climate For Growing Rice</h2>
+            <p class="text-lg leading-relaxed mb-6">
+              The ideal climate for growing rice is a warm, humid environment with temperatures ranging between 70°F to 95°F (21°C to 35°C), abundant water supply, and ample sunshine, typically found in tropical and subtropical regions.
+            </p>
+            <a href="lm1.html" class="inline-block bg-lime-900 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-500 transition duration-300">Learn More</a>
+          </div>
         </div>
       </section>
 
-      <!-- Repeated Content Sections with Variations -->
-      <section class="py-12 bg-lime-50">
-        <div class="max-w-4xl mx-auto text-center bg-white shadow-md rounded-lg p-6">
-          <h2 class="text-2xl font-bold font-mono mb-6">Ideal Soil For Growing Rice</h2>
-          <img class="w-full md:w-1/2 mx-auto mb-6" src="images/card2.avif" alt="Ideal Soil">
-          <p class="p-5 font-mono">
-            The ideal soil for growing rice is deep, fertile, and well-drained, with a high clay content to retain water, and a pH ranging from 5.5 to 7.0, often found in floodplains and river deltas.
-          </p>
-          <a href="lm1.html" class="inline-block mt-6 bg-lime-900 text-white font-bold py-3 px-6 rounded-lg hover:bg-lime-700">Learn More</a>
+      <!-- Content Section 4 -->
+      <section class="py-12 bg-gray-100">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 md:order-2 md:pl-8 mb-8 md:mb-0">
+            <img class="rounded-lg shadow-lg" src="images/card4.webp" alt="Rice Lifecycle">
+          </div>
+          <div class="md:w-1/2 md:order-1 md:pr-8">
+            <h2 class="text-3xl font-bold text-lime-900 mb-6">Rice Lifecycle</h2>
+            <p class="text-lg leading-relaxed mb-6">
+              The rice life cycle encompasses a fascinating journey from seed to harvest, reflecting the intricate dance between nature and human intervention. Beginning with the selection of quality seeds and the careful preparation of flooded paddies or terraced fields, the cycle progresses through stages of growth, where tender shoots emerge and mature into lush green stalks.
+            </p>
+            <a href="lm1.html" class="inline-block bg-lime-900 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-500 transition duration-300">Learn More</a>
+          </div>
         </div>
       </section>
 
+      <!-- Additional Content Sections -->
+
+      <!-- Content Section 5 -->
       <section class="py-12 bg-white">
-        <div class="max-w-4xl mx-auto text-center bg-white shadow-md rounded-lg p-6">
-          <h2 class="text-2xl font-bold font-mono mb-6">Ideal Climate For Growing Rice</h2>
-          <img class="w-full md:w-1/2 mx-auto mb-6" src="images/card3.jpg" alt="Ideal Climate">
-          <p class="p-5 font-mono">
-            The ideal climate for growing rice is a warm, humid environment with temperatures ranging between 70°F to 95°F (21°C to 35°C), abundant water supply, and ample sunshine, typically found in tropical and subtropical regions.
-          </p>
-          <a href="lm1.html" class="inline-block mt-6 bg-lime-900 text-white font-bold py-3 px-6 rounded-lg hover:bg-lime-700">Learn More</a>
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 md:pr-8 mb-8 md:mb-0">
+            <img class="rounded-lg shadow-lg" src="images/card8.avif" alt="Rice in Water">
+          </div>
+          <div class="md:w-1/2 md:pl-8">
+            <h2 class="text-3xl font-bold text-lime-900 mb-6">Why Is Rice Better Grown In Water?</h2>
+            <p class="text-lg leading-relaxed mb-6">
+              Rice is better grown in water because it thrives in flooded conditions that suppress weeds, reduce pests and diseases, and provide the ideal environment for its root development and nutrient uptake.
+            </p>
+            <a href="lm1.html" class="inline-block bg-lime-900 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-500 transition duration-300">Learn More</a>
+          </div>
         </div>
       </section>
 
-      <section class="py-12 bg-lime-50">
-        <div class="max-w-4xl mx-auto text-center bg-white shadow-md rounded-lg p-6">
-          <h2 class="text-2xl font-bold font-mono mb-6">Rice Lifecycle</h2>
-          <img class="w-full md:w-1/2 mx-auto mb-6" src="images/card4.webp" alt="Rice Lifecycle">
-          <p class="p-5 font-mono">
-            The rice life cycle encompasses a fascinating journey from seed to harvest, reflecting the intricate dance between nature and human intervention. Beginning with the selection of quality seeds and the careful preparation of flooded paddies or terraced fields, the cycle progresses through stages of growth, where tender shoots emerge and mature into lush green stalks.
-          </p>
-          <a href="lm1.html" class="inline-block mt-6 bg-lime-900 text-white font-bold py-3 px-6 rounded-lg hover:bg-lime-700">Learn More</a>
+      <!-- Content Section 6 -->
+      <section class="py-12 bg-gray-100">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 md:order-2 md:pl-8 mb-8 md:mb-0">
+            <img class="rounded-lg shadow-lg" src="images/card9.avif" alt="EOSDA Solutions">
+          </div>
+          <div class="md:w-1/2 md:order-1 md:pr-8">
+            <h2 class="text-3xl font-bold text-lime-900 mb-6">Streamlining Field Work On The Paddies Using EOSDA Crop Monitoring Solutions</h2>
+            <p class="text-lg leading-relaxed mb-6">
+              Streamlining field work on the paddies using EOSDA Crop Monitoring solutions involves leveraging satellite imagery and advanced analytics to optimize water management, monitor crop health, predict yields, and efficiently plan farming activities.
+            </p>
+            <a href="lm1.html" class="inline-block bg-lime-900 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-500 transition duration-300">Learn More</a>
+          </div>
         </div>
       </section>
-
-      <!-- Additional Sections following the same pattern... -->
-
-      <section class="py-12 bg-white">
-        <div class="max-w-4xl mx-auto text-center bg-white shadow-md rounded-lg p-6">
-          <h2 class="text-2xl font-bold font-mono mb-6">Why Is Rice Better Grown In Water?</h2>
-          <img class="w-full md:w-1/2 mx-auto mb-6" src="images/card8.avif" alt="Rice in Water">
-          <p class="p-5 font-mono">
-            Rice is better grown in water because it thrives in flooded conditions that suppress weeds, reduce pests and diseases, and provide the ideal environment for its root development and nutrient uptake.
-          </p>
-          <a href="lm1.html" class="inline-block mt-6 bg-lime-900 text-white font-bold py-3 px-6 rounded-lg hover:bg-lime-700">Learn More</a>
-        </div>
-      </section>
-
-      <section class="py-12 bg-lime-50">
-        <div class="max-w-4xl mx-auto text-center bg-white shadow-md rounded-lg p-6">
-          <h2 class="text-2xl font-bold font-mono mb-6">Streamlining Field Work On The Paddies Using EOSDA Crop Monitoring Solutions</h2>
-          <img class="w-full md:w-1/2 mx-auto mb-6" src="images/card9.avif" alt="EOSDA Solutions">
-          <p class="p-5 font-mono">
-            Streamlining field work on the paddies using EOSDA Crop Monitoring solutions involves leveraging satellite imagery and advanced analytics to optimize water management, monitor crop health, predict yields, and efficiently plan farming activities.
-          </p>
-          <a href="lm1.html" class="inline-block mt-6 bg-lime-900 text-white font-bold py-3 px-6 rounded-lg hover:bg-lime-700">Learn More</a>
-        </div>
-      </section>
-    </div>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-lime-900 p-8 text-white">
       <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
-          <img class="w-20 mb-4" src="/images/logo.png" alt="Logo">
+          <img class="w-20 mb-4" src="images/logo.png" alt="Logo">
           <p class="text-lg">
             Rice Farming is dedicated to producing premium rice while promoting sustainable agricultural practices. Thank you for supporting us.
           </p>
@@ -132,31 +163,37 @@
         <div>
           <h3 class="text-xl font-bold mb-4">Links</h3>
           <ul>
-            <li class="mb-2"><a class="hover:text-green-500" href="../index.html">Home</a></li>
-            <li class="mb-2"><a class="hover:text-green-500" href="./pages/contact.html">Contact</a></li>
-            <li class="mb-2"><a class="hover:text-green-500" href="./pages/services.html">Services</a></li>
-            <li class="mb-2"><a class="hover:text-green-500" href="./pages/about.html">About</a></li>
+            <li class="mb-2"><a class="hover:text-green-500" href="index.html">Home</a></li>
+            <li class="mb-2"><a class="hover:text-green-500" href="pages/contact.html">Contact</a></li>
+            <li class="mb-2"><a class="hover:text-green-500" href="pages/services.html">Services</a></li>
+            <li class="mb-2"><a class="hover:text-green-500" href="pages/about.html">About</a></li>
           </ul>
         </div>
 
         <div>
-          <h3 class="text-xl font-bold mb-4">Subscribe to Our Newsletter</h3>
+          <h3 class="text-xl font-bold mb-4">Subscribe to Our Website</h3>
           <form class="flex flex-col">
             <input class="p-2 mb-4 text-black rounded" type="email" placeholder="Enter your email">
-            <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded" type="submit">Subscribe</button>
+            <button class="inline-block bg-green-400 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-500 transition duration-300" type="submit">Subscribe</button>
           </form>
         </div>
       </div>
 
       <div class="mt-8 text-center">
-        <a class="px-2 text-2xl" href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a class="px-2 text-2xl" href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a class="px-2 text-2xl" href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a class="px-2 text-2xl hover:text-lime-500" href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a class="px-2 text-2xl hover:text-lime-500" href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a class="px-2 text-2xl hover:text-lime-500" href="#"><i class="fa-brands fa-instagram"></i></a>
       </div>
 
       <div class="mt-8 text-center">
         <h3 class="font-bold text-lg">&copy; 2024 Rice Farming</h3>
       </div>
     </footer>
+
+    <script>
+      document.getElementById('menu-button').addEventListener('click', () => {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+      });
+    </script>
   </body>
 </html>

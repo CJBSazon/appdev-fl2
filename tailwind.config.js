@@ -21,3 +21,14 @@ module.exports = {
   },
   plugins: [],
 }
+module.exports = {
+  theme: {
+    extend: {
+      backgroundImage: {
+        'hero-pattern': "url('https://eos.com/wp-content/uploads/2023/04/rice-field.jpg')",
+        'hero-pattern': "url('images/rf-1.webp')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      }
+    }
+  }
+}

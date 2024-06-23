@@ -23,18 +23,23 @@
     <link rel="icon" href="../images/logo.png">
   </head>
   <body class="bg-lime-200 pt-36">
-    <header class="fixed w-full top-0 z-50 bg-lime-900 p-4">
-      <div class="flex flex-col md:flex-row md:justify-between items-center">
-        <div>
-          <img class="w-20 ml-0 md:ml-12" src="../images/logo.png" alt="Logo">
-        </div>
-        <nav class="mt-4 md:mt-0 text-center font-bold text-white">
-          <a class="hover:text-green-500 px-2 md:px-8" href="../index.html">Home</a>
-          <a class="hover:text-green-500 px-2 md:px-8" href="contact.html">Contact</a>
-          <a class="hover:text-green-500 px-2 md:px-8" href="services.html">Services</a>
-          <a class="hover:text-green-500 px-2 md:px-8" href="about.html">About</a>
+    <header class="fixed w-full top-0 z-50 bg-lime-900 shadow-lg">
+      <div class="container mx-auto flex justify-between items-center p-4">
+        <img class="w-20" src="../images/logo.png" alt="Rice Farming Logo">
+        <nav class="hidden md:flex space-x-8 font-bold text-white">
+          <a class="hover:text-green-500" href="../index.html">Home</a>
+          <a class="hover:text-green-500" href="contact.html">Contact</a>
+          <a class="hover:text-green-500" href="services.html">Services</a>
+          <a class="hover:text-green-500" href="about.html">About</a>
         </nav>
+        <button class="md:hidden text-white" id="menu-button"><i class="fas fa-bars"></i></button>
       </div>
+      <nav id="mobile-menu" class="hidden md:hidden bg-lime-900 text-white font-bold text-center p-4">
+        <a class="block py-2 hover:text-green-500" href="../index.html">Home</a>
+        <a class="block py-2 hover:text-green-500" href="contact.html">Contact</a>
+        <a class="block py-2 hover:text-green-500" href="services.html">Services</a>
+        <a class="block py-2 hover:text-green-500" href="about.html">About</a>
+      </nav>
     </header>
     <div class="pt-24 p-4 md:p-12">
       <div class="bg-white shadow-md rounded-lg p-6 md:p-12">
@@ -54,7 +59,7 @@
               <label class="block text-gray-700 font-semibold" for="message">Message</label>
               <textarea class="w-full border border-gray-300 p-2 rounded-md" id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
             </div>
-            <button class="w-full bg-lime-900 text-white font-bold p-2 rounded-md hover:bg-lime-700" type="submit">Send Message</button>
+            <button class="w-full mt-6 bg-lime-900 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-500 transition duration-300" type="submit">Send Message</button>
           </form>
           <div class="space-y-4">
             <div>
@@ -105,19 +110,19 @@
     
         <!-- Newsletter Subscription -->
         <div>
-          <h3 class="text-xl font-bold mb-4">Subscribe to Our Newsletter</h3>
+          <h3 class="text-xl font-bold mb-4">Subscribe to Our Website</h3>
           <form class="flex flex-col">
             <input class="p-2 mb-4 text-black rounded" type="email" placeholder="Enter your email">
-            <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded" type="submit">Subscribe</button>
+            <button class="inline-block bg-green-400 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-500 transition duration-300" type="submit">Subscribe</button>
           </form>
         </div>
       </div>
     
       <!-- Social Media Links -->
       <div class="mt-8 text-center">
-        <a class="px-2 text-2xl" href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a class="px-2 text-2xl" href="#"><i class="fa-brands fa-x-twitter"></i></a>
-        <a class="px-2 text-2xl" href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a class="px-2 text-2xl hover:text-lime-500" href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a class="px-2 text-2xl hover:text-lime-500" href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a class="px-2 text-2xl hover:text-lime-500" href="#"><i class="fa-brands fa-instagram"></i></a>
       </div>
     
       <!-- Footer Bottom -->
@@ -125,5 +130,10 @@
         <h3 class="font-bold text-lg">&copy; 2024 Rice Farming</h3>
       </div>
     </footer>
+    <script>
+      document.getElementById('menu-button').addEventListener('click', () => {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+      });
+    </script>
   </body>
 </html>
